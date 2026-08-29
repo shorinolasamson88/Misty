@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Misty ❤️</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #10070f;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* =========================
+           FLOATING HEARTS
+        ========================== */
+
+        .heart {
+            position: fixed;
+            bottom: -40px;
+            color: #ff9ecb;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 10;
+            animation: floatHeart linear forwards;
+        }
+
+        @keyframes floatHeart {
+
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.8;
+            }
+
+            90% {
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 30px;
+
+            position: relative;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #6a2852 0%,
+                    #32142d 35%,
+                    #10070f 75%
+                );
+        }
+
+        .hero-content {
+
+            max-width: 850px;
+
+            animation: fadeUp 1.5s ease;
+        }
+
+        .eyebrow {
+
+            color: #ffafd2;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 13px;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+
+            font-size: clamp(55px, 12vw, 110px);
+
+            line-height: 0.95;
+
+            font-weight: normal;
+
+            margin-bottom: 30px;
+        }
+
+        .hero h1 span {
+
+            color: #ff9fc9;
+        }
+
+        .hero p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #efd9e5;
+
+            font-size: 19px;
+
+            line-height: 1.9;
+        }
+
+        .enter-btn {
+
+            display: inline-block;
+
+            margin-top: 40px;
+
+            padding: 16px 32px;
+
+            background: #ff91c2;
+
+            color: #210b19;
+
+            text-decoration: none;
+
+            border-radius: 50px;
+
+            font-family: Arial, sans-serif;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 0 25px rgba(255,145,194,0.35);
+        }
+
+        .enter-btn:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 0 40px rgba(255,145,194,0.6);
+        }
+
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================== */
+
+        section {
+
+            padding: 100px 20px;
+        }
+
+        .container {
+
+            max-width: 1000px;
+
+            margin: auto;
+        }
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+
+            display: block;
+
+            color: #ff9fc9;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+        }
+
+        .section-title h2 {
+
+            font-size: clamp(36px, 7vw, 60px);
+
+            font-weight: normal;
+        }
+
+
+        /* =========================
+           BIRTHDAY
+        ========================== */
+
+        .birthday {
+
+            background: #1b0b19;
+        }
+
+        .birthday-card {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #38162f,
+                    #1b0a19
+                );
+
+            padding: 65px 35px;
+
+            border-radius: 30px;
+
+            text-align: center;
+
+            border: 1px solid rgba(255,159,201,0.15);
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,0.35);
+        }
+
+        .cake {
+
+            font-size: 70px;
+
+            margin-bottom: 20px;
+        }
+
+        .birthday-card h2 {
+
+            color: #ffafd2;
+
+            font-size: clamp(38px, 7vw, 65px);
+
+            font-weight: normal;
+
+            margin-bottom: 25px;
+        }
+
+        .birthday-card p {
+
+            max-width: 720px;
+
+            margin: auto;
+
+            color: #e7cfdd;
+
+            font-size: 18px;
+
+            line-height: 2;
+        }
+
+
+        /* =========================
+           LETTER
+        ========================== */
+
+        .letter {
+
+            background: #10070f;
+        }
+
+        .letter-paper {
+
+            max-width: 820px;
+
+            margin: auto;
+
+            background: #f9ebf1;
+
+            color: #35172c;
+
+            padding: 60px 45px;
+
+            border-radius: 8px;
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,0.4);
+
+            position: relative;
+        }
+
+        .letter-paper::after {
+
+            content: "♥";
+
+            position: absolute;
+
+            right: 25px;
+
+            top: 20px;
+
+            font-size: 25px;
+
+            color: #d8669b;
+        }
+
+        .letter-paper p {
+
+            font-size: 18px;
+
+            line-height: 2;
+
+            margin-bottom: 20px;
+        }
+
+        .signature {
+
+            margin-top: 40px;
+
+            text-align: right;
+
+            color: #b5477d;
+
+            font-size: 23px;
+        }
+
+
+        /* =========================
+           11 THINGS
+        ========================== */
+
+        .reasons {
+
+            background: #1b0b19;
+        }
+
+        .reason-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .reason {
+
+            background: #281025;
+
+            padding: 32px;
+
+            border-radius: 22px;
+
+            border:
+                1px solid rgba(255,159,201,0.12);
+
+            transition: 0.3s;
+        }
+
+        .reason:hover {
+
+            transform: translateY(-6px);
+
+            border-color:
+                rgba(255,159,201,0.4);
+        }
+
+        .number {
+
+            color: #ff9fc9;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 13px;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 15px;
+        }
+
+        .reason h3 {
+
+            color: #ffb0d1;
+
+            font-size: 23px;
+
+            margin-bottom: 12px;
+        }
+
+        .reason p {
+
+            color: #dbc4d3;
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           11 MONTHS
+        ========================== */
+
+        .months {
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #10070f,
+                    #291025
+                );
+        }
+
+        .eleven {
+
+            font-size:
+                clamp(120px, 25vw, 230px);
+
+            line-height: 0.8;
+
+            color: #ff9fc9;
+
+            font-weight: bold;
+
+            text-shadow:
+                0 0 50px
+                rgba(255,159,201,0.25);
+        }
+
+        .months h3 {
+
+            font-size: 34px;
+
+            margin: 35px 0 20px;
+        }
+
+        .months p {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            color: #dfc8d7;
+
+            font-size: 18px;
+
+            line-height: 2;
+        }
+
+
+        /* =========================
+           MEMORIES
+        ========================== */
+
+        .memories {
+
+            background: #1b0b19;
+        }
+
+        .memory-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+        }
+
+        .memory {
+
+            background: #291127;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            border:
+                1px solid rgba(255,159,201,0.15);
+
+            min-height: 270px;
+        }
+
+        .memory img {
+
+            width: 100%;
+
+            height: 270px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        .memory video {
+
+            width: 100%;
+
+            height: 270px;
+
+            object-fit: cover;
+
+            display: block;
+
+            background: #120812;
+        }
+
+        .memory-placeholder {
+
+            min-height: 270px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 25px;
+
+            color: #bca4b5;
+
+            font-family: Arial, sans-serif;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           TWIN GENERATION
+        ========================== */
+
+        .together {
+
+            background: #10070f;
+
+            text-align: center;
+        }
+
+        .together-box {
+
+            max-width: 780px;
+
+            margin: auto;
+        }
+
+        .together-box p {
+
+            color: #e1cbd8;
+
+            font-size: 19px;
+
+            line-height: 2;
+
+            margin-bottom: 22px;
+        }
+
+        .highlight {
+
+            color: #ffacd0;
+
+            font-size: 25px;
+        }
+
+
+        /* =========================
+           FINAL
+        ========================== */
+
+        .final {
+
+            min-height: 90vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle,
+                    #5a2145,
+                    #160914 70%
+                );
+        }
+
+        .final-content {
+
+            max-width: 780px;
+        }
+
+        .final-heart {
+
+            font-size: 80px;
+
+            display: inline-block;
+
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        .final h2 {
+
+            font-size:
+                clamp(42px, 8vw, 75px);
+
+            font-weight: normal;
+
+            margin: 25px 0;
+        }
+
+        .final p {
+
+            color: #e8d0dd;
+
+            font-size: 19px;
+
+            line-height: 2;
+        }
+
+        .final-message {
+
+            margin-top: 40px;
+
+            color: #ffacd0;
+
+            font-size: 25px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            padding: 25px;
+
+            text-align: center;
+
+            background: #090409;
+
+            color: #766370;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           ANIMATIONS
+        ========================== */
+
+        @keyframes fadeUp {
+
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media(max-width:700px) {
+
+            section {
+                padding: 75px 18px;
+            }
+
+            .reason-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .memory-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .letter-paper {
+                padding: 40px 25px;
+            }
+
+            .letter-paper p {
+                font-size: 16px;
+            }
+
+            .birthday-card {
+                padding: 45px 25px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            A little surprise for my favourite perosn ❤️
+        </div>
+
+        <h1>
+            Hey, <span>Oyinkansola mhi</span> ❤️
+        </h1>
+
+        <p>
+            You probably weren't expecting a whole website from me...
+            but here we are.
+
+            So before you continue, just know that this was made
+            especially for you.
+        </p>
+
+        <a href="#birthday" class="enter-btn">
+            Open your surprise ❤️
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     BIRTHDAY
+================================================== -->
+
+<section class="birthday" id="birthday">
+
+    <div class="container">
+
+        <div class="birthday-card">
+
+            <div class="cake">
+                🎂
+            </div>
+
+            <h2>
+                Happy Birthday, Misty.
+            </h2>
+
+            <p>
+                Today is your day.
+
+                And while I could simply say "Happy Birthday",
+                I wanted to do something that would remind you
+                that you are genuinely appreciated.
+
+                I hope this new year of your life brings you
+                happiness, peace, beautiful opportunities,
+                laughter and plenty of reasons to smile.
+
+                You deserve good things, Local Ijebu girl. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LETTER
+================================================== -->
+
+<section class="letter">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                A letter from me
+            </span>
+
+            <h2>
+                I hope you know this.
+            </h2>
+
+        </div>
+
+
+        <div class="letter-paper">
+
+            <p>
+                Dear Misty,
+            </p>
+
+            <p>
+                I don't think I've said this enough, so let me say
+                it properly today.
+            </p>
+
+            <p>
+                I appreciate you. A lot.
+            </p>
+
+            <p>
+                These 11 months have given me so many memories.
+                From cooking together, eating together, reading together,
+                doing random things together, laughing over things that
+                probably weren't even that funny, and simply being around
+                each other...
+            </p>
+
+            <p>
+                Those ordinary moments have honestly become some of my
+                favourite moments.
+            </p>
+
+            <p>
+                Thank you for being my number-one supporter.
+
+                Thank you for always caring about me, checking on me,
+                supporting me academically and in other ways,
+                and being there when I need someone.
+            </p>
+
+            <p>
+                I appreciate the way you care about me for who I am.
+
+                Not some perfect version of me.
+
+                Just me.
+            </p>
+
+            <p>
+                And yes...
+
+                I know you can have your stubborn-head moments. 😂
+
+                Sometimes instead of settling an argument,
+                you'll decide to enter your "I.m not texting first" era.
+
+                And I'll still text you to settle and you are always ready to settle also. 😂❤️
+            </p>
+
+            <p>
+                But that's one of the things I love about us.
+
+                Even when we disagree, we still find our way back
+                to each other.
+
+                We play.
+                We laugh.
+                We talk.
+                We annoy each other.
+
+                And somehow...
+
+                we're still here.
+
+                Going stronger.
+            </p>
+
+            <p>
+                I'm genuinely lucky to have you in my life,
+                and I'm genuinely happy that I get to share these
+                memories with you.
+            </p>
+
+            <p>
+                So today, I hope you know that you are appreciated,
+                valued and loved for the person you are.
+            </p>
+
+            <div class="signature">
+                From your favourite Island Boy ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     11 THINGS
+================================================== -->
+
+<section class="reasons">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                11 things
+            </span>
+
+            <h2>
+                11 things I appreciate about you
+            </h2>
+
+        </div>
+
+
+        <div class="reason-grid">
+
+
+            <div class="reason">
+
+                <div class="number">
+                    01
+                </div>
+
+                <h3>
+                    You're my number-one supporter.
+                </h3>
+
+                <p>
+                    You've supported me in ways I genuinely appreciate,
+                    especially when I needed someone in my corner.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    02
+                </div>
+
+                <h3>
+                    You care.
+                </h3>
+
+                <p>
+                    You actually care about how I'm doing,
+                    and those little moments of concern mean more
+                    than you probably realise.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    03
+                </div>
+
+                <h3>
+                    Your patience.
+                </h3>
+
+                <p>
+                    Especially with someone who can sometimes
+                    be a handful. 😂
+                    Thank you for still being patient with me.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    04
+                </div>
+
+                <h3>
+                    Our random moments.
+                </h3>
+
+                <p>
+                    Cooking, eating, reading, talking,
+                    doing absolutely random things...
+                    somehow everything becomes more memorable with you.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    05
+                </div>
+
+                <h3>
+                    You make me laugh.
+                </h3>
+
+                <p>
+                    We can turn the most normal situation into
+                    something funny because we simply enjoy
+                    playing around with each other.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    06
+                </div>
+
+                <h3>
+                    You believe in me.
+                </h3>
+
+                <p>
+                    Your encouragement has helped me keep going
+                    when things got difficult.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    07
+                </div>
+
+                <h3>
+                    You accept me.
+                </h3>
+
+                <p>
+                    Thank you for caring about me as I am,
+                    rather than expecting me to always be perfect.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    08
+                </div>
+
+                <h3>
+                    Our little world.
+                </h3>
+
+                <p>
+                    There is something special about all the ordinary
+                    things we do together.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    09
+                </div>
+
+                <h3>
+                    We don't give up easily.
+                </h3>
+
+                <p>
+                    Even when we have those "please stop being stubborn"
+                    moments, we still find our way back.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    10
+                </div>
+
+                <h3>
+                    You make me happy.
+                </h3>
+
+                <p>
+                    Simply having you around has brought a lot
+                    of happiness into my life.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    11
+                </div>
+
+                <h3>
+                    You're simply you.
+                </h3>
+
+                <p>
+                    And honestly, that might be my favourite one.
+
+                    I don't need a perfect explanation.
+
+                    I appreciate you because you're Misty.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="number">
+                    BONUS ❤️
+                </div>
+
+                <h3>
+                    You're my Local Ijebu girl.
+                </h3>
+
+                <p>
+                    And yes, I had to put this here.
+
+                    Because how could I make a whole website
+                    and not mention my Local Ijebu girl? 😂❤️
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     11 MONTHS
+================================================== -->
+
+<section class="months">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                And us...
+            </span>
+
+            <h2>
+                Look how far we've come.
+            </h2>
+
+        </div>
+
+
+        <div class="eleven">
+            11
+        </div>
+
+        <h3>
+            months of us ❤️
+        </h3>
+
+        <p>
+            Eleven months of memories.
+
+            Eleven months of growing.
+
+            Eleven months of conversations.
+
+            Eleven months of cooking, eating, reading,
+            playing, laughing, supporting each other,
+            and figuring things out together.
+
+            And honestly?
+
+            I'm grateful for every single one.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     TOGETHER
+================================================== -->
+
+<section class="together">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                My favourite part
+            </span>
+
+            <h2>
+                The little things.
+            </h2>
+
+        </div>
+
+
+        <div class="together-box">
+
+            <p>
+                I think one of the things I appreciate most
+                about us is that we don't always need some huge
+                event to make a memory.
+            </p>
+
+            <p>
+                Sometimes it's just us cooking together.
+
+                Reasoning together.
+
+                Eating together.
+
+                Reading together.
+
+                Sitting around doing our own things.
+
+                Talking about random stuff.
+
+                Playing around.
+            </p>
+
+            <p>
+                Those moments might look ordinary to everyone else,
+                but they're the kind of moments I remember.
+            </p>
+
+            <p class="highlight">
+                Because I got to experience them with you. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MEMORIES
+================================================== -->
+
+<section class="memories">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Our little memories
+            </span>
+
+            <h2>
+                A few moments worth keeping.
+            </h2>
+
+        </div>
+
+
+        <div class="memory-grid">
+
+
+            <!-- IMAGE 1 -->
+
+            <div class="memory">
+
+                <img
+                    src="./photo1.jpeg"
+                    alt="A special memory"
+                >
+
+            </div>
+
+
+            <!-- IMAGE 2 -->
+
+            <div class="memory">
+
+                <img
+                    src="./photo2.jpeg"
+                    alt="Another special memory"
+                >
+
+            </div>
+
+
+            <!-- VIDEO 1 -->
+
+            <div class="memory">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                >
+
+                    <source
+                        src="./video1.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video playback.
+
+                </video>
+
+            </div>
+
+
+            <!-- VIDEO 2 -->
+
+            <div class="memory">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                >
+
+                    <source
+                        src="./video2.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video playback.
+
+                </video>
+
+            </div>
+
+
+            <!-- FINAL MEMORY -->
+
+            <div class="memory">
+
+                <div class="memory-placeholder">
+
+                    💕<br>
+
+                    More memories to come...
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FINAL MESSAGE
+================================================== -->
+
+<section class="final">
+
+    <div class="final-content">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+
+        <h2>
+            One last thing, Baby.
+        </h2>
+
+
+        <p>
+
+            This little website is nowhere near enough
+            to explain how much I appreciate you.
+
+            But I hope every part of it reminds you
+            that someone is genuinely grateful that you're
+            in his life.
+
+            Thank you for your support.
+
+            Thank you for your patience.
+
+            Thank you for caring.
+
+            Thank you for your love.
+
+            Thank you for all the memories.
+
+            Thank you for being my number-one supporter.
+
+            Thank you for being my Local Ijebu girl. 😂❤️
+
+            And thank you for choosing to keep going with me,
+            even through our hard moments.
+
+        </p>
+
+
+        <div class="final-message">
+
+            Happy Birthday, My Love. 🎂❤️
+
+            <br>
+
+            Happy 11 Months to us. 🥂
+
+            <br><br>
+
+            Here's to many more memories,
+            more laughter,
+            more random moments,
+            more cooking,
+            more reading,
+            more playing...
+
+            <br><br>
+
+            and hopefully...
+
+            <br>
+
+            <strong>
+                slightly fewer stubborn-head arguments. 😂❤️
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    Made specially for Misty ❤️
+    <br><br>
+    11 months & counting...
+
+</footer>
+
+
+
+<!-- ==================================================
+     FLOATING HEART SCRIPT
+================================================== -->
+
+<script>
+
+    function createHeart() {
+
+        const heart =
+            document.createElement("div");
+
+        heart.className = "heart";
+
+        const symbols =
+            ["♥", "♡", "❤", "💕"];
+
+        heart.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() * symbols.length
+                )
+            ];
+
+        heart.style.left =
+            Math.random() * 100 + "%";
+
+        heart.style.fontSize =
+            (14 + Math.random() * 16) + "px";
+
+        heart.style.animationDuration =
+            (8 + Math.random() * 8) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+
+            heart.remove();
+
+        }, 16000);
+
+    }
+
+
+    setInterval(createHeart, 1300);
+
+</script>
+
+
+</body>
+</html>
+
